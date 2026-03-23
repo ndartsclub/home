@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,13 +8,15 @@
   <meta property="og:title" content="Orions Darts Club" />
   <meta property="og:description" content="Contact & Crew. Precision in motion." />
   <meta name="theme-color" content="#0b1220" />
-  ./home/assets/styles.css
+
+  <!-- ✅ CSS を正しく読み込む（これが無いとスタイルは反映されません） -->
+  <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 
 <body>
   <header class="topbar">
     <div class="wrap nav">
-      #top
+      <a class="brand" href="#top" aria-label="Orions Darts Club home">
         <span class="logo" aria-hidden="true"></span>
         <span class="brandText">
           <span class="brandName">Orions Darts Club</span>
@@ -23,9 +25,9 @@
       </a>
 
       <nav class="links" aria-label="primary">
-        #contactContact</a>
-        #membersMembers</a>
-        #scheduleSchedule</a>
+        <a href="#contact">Contact</a>
+        <a href="#members">Members</a>
+        <a href="#schedule">Schedule</a>
       </nav>
 
       <div class="actions">
@@ -37,7 +39,7 @@
           </svg>
         </button>
 
-        #contact
+        <a class="btn" href="#contact">
           <span>Get in Touch</span>
           <span class="mono">→</span>
         </a>
@@ -66,9 +68,9 @@
           </p>
 
           <div class="heroBtns">
-            #contactContact</a>
-            #membersMeet the Crew</a>
-            #scheduleView Schedule</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn secondary" href="#members">Meet the Crew</a>
+            <a class="btn secondary" href="#schedule">View Schedule</a>
           </div>
 
           <div class="glowline"></div>
@@ -134,7 +136,7 @@
             </p>
 
             <div class="contactBtns">
-              mailto:n.dartsclub@gmial.com?subject=Orions%20Darts%20Club%20Inquiry
+              <a class="btn" href="mailto:n.dartsclub@gmial.com?subject=Orions%20Darts%20Club%20Inquiry">
                 <span>Open Mail</span>
                 <span class="mono">↗</span>
               </a>
@@ -220,6 +222,7 @@
     <div class="toastBody muted" id="toastBody">—</div>
   </div>
 
-  ./assets/app.js</script>
+  <!-- ✅ JS を正しく読み込む（これが無いとJSON描画/テーマ切替が動きません） -->
+  <script src="./assets/app.js" defer></script>
 </body>
 </html>
