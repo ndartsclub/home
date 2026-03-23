@@ -1,0 +1,23 @@
+[
+  {
+    "initial": "Y.Fukaya",
+    "role": "Club President",
+    "teamTag": "Leadership",
+    "tagline": "Sets the orbit: direction, standards, and momentum.",
+    "skills": ["Strategy", "Standards", "Mentorship"]
+  },
+  {
+    "initial": "A.Atsushi",
+    "role": "Executive Vice President",
+    "teamTag": "Operations",
+    "tagline": "Turns plans into clean routines and repeatable wins.",
+    "skills": ["Operations", "Scheduling", "Consistency"]
+  },
+  {
+    "initial": "S.Nakanao",
+    "role": "Head of Communications",
+    "teamTag": "Public Relations",
+    "tagline": "Shapes the signal: announcements, outreach, and presence.",
+    "skills": ["PR", "Outreach", "Updates"]
+  }
+]
