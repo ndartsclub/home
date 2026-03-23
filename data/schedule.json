@@ -1,0 +1,29 @@
+{
+  "highlight": "部員募集中",
+  "items": [
+    {
+      "title": "部員募集中",
+      "when": "Now",
+      "location": "Email us",
+      "note": "体験参加・見学OK。希望曜日/時間帯を添えてご連絡ください。"
+    },
+    {
+      "title": "Open Practice",
+      "when": "Every Wed 19:30–21:00 (JST)",
+      "location": "TBD",
+      "note": "フォーム運用にする場合はここをリンクに置換してください。"
+    },
+    {
+      "title": "Skill Session — Checkout Focus",
+      "when": "Every Sat 10:00–11:30 (JST)",
+      "location": "TBD",
+      "note": "60+のチェックアウトを反復。軽いミニゲーム形式。"
+    },
+    {
+      "title": "Monthly Meetup",
+      "when": "1st Sun 15:00–17:00 (JST)",
+      "location": "TBD",
+      "note": "月例の交流・ミニトーナメント。"
+    }
+  ]
+}
