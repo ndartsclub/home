@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orions Darts Club</title>
+  <meta name="description" content="Orions Darts Club — Contact & Crew. Precision in motion." />
+  <meta property="og:title" content="Orions Darts Club" />
+  <meta property="og:description" content="Contact & Crew. Precision in motion." />
+  <meta name="theme-color" content="#0b1220" />
+  ./assets/styles.css
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      #top
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brandText">
+          <span class="brandName">Orions Darts Club</span>
+          <span class="brandTag">Contact • Crew • Schedule</span>
+        </span>
+      </a>
+
+      <nav class="links" aria-label="primary">
+        #contactContact</a>
+        #membersMembers</a>
+        #scheduleSchedule</a>
+      </nav>
+
+      <div class="actions">
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" class="icon" fill="none" aria-hidden="true">
+            <path d="M12 3v2m0 14v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M3 12h2m14 0h2M4.22 19.78l1.42-1.42m12.72-12.72l1.42-1.42"
+              stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="currentColor" stroke-width="1.6"/>
+          </svg>
+        </button>
+
+        #contact
+          <span>Get in Touch</span>
+          <span class="mono">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="heroGrid">
+        <div class="card heroCard">
+          <div class="pill">
+            <span class="dot"></span>
+            <span id="headline">部員募集中</span>
+          </div>
+
+          <h1 class="h1">
+            Orions Darts Club<br/>
+            <span class="grad">Contact-first</span> home.
+          </h1>
+
+          <p class="sub">
+            ここは「連絡先を迷わせない」ことを最優先にした、最小構成のクラブページです。
+            メンバーとスケジュールはJSONから読み込み、更新はデータファイルの差し替えだけで回せます。
+          </p>
+
+          <div class="heroBtns">
+            #contactContact</a>
+            #membersMeet the Crew</a>
+            #scheduleView Schedule</a>
+          </div>
+
+          <div class="glowline"></div>
+
+          <div class="kpis" id="kpis">
+            <!-- app.js が生成 -->
+          </div>
+        </div>
+
+        <aside class="card sideCard">
+          <div class="inner">
+            <div class="sideHead">
+              <h2 class="h2">Quick Status</h2>
+              <span class="pill small"><span class="mono" id="now"></span></span>
+            </div>
+
+            <div class="sideList" id="quickList">
+              <!-- app.js が生成 -->
+            </div>
+
+            <div class="note">
+              <div class="noteTitle">運用メモ</div>
+              <div class="noteBody">
+                メンバー/スケジュールは <span class="mono">/data/*.json</span> を編集→pushするだけで更新されます。
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT (Main) -->
+    <section id="contact" class="section">
+      <div class="sectionHead">
+        <h2 class="h2">Contact</h2>
+        <div class="chips">
+          <span class="pill small">Primary</span>
+          <span class="pill small">Email</span>
+        </div>
+      </div>
+
+      <div class="card contactCard">
+        <div class="inner contactInner">
+          <div class="contactLeft">
+            <div class="badge">
+              <span class="dot"></span>
+              <span>Official Address</span>
+            </div>
+
+            <div class="emailRow">
+              <div class="email mono" id="emailText">n.dartsclub@gmial.com</div>
+              <button class="iconbtn" id="copyEmailBtn" type="button" aria-label="Copy email" title="Copy">
+                <svg viewBox="0 0 24 24" class="icon" fill="none" aria-hidden="true">
+                  <path d="M9 9h10v10H9V9Z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </button>
+            </div>
+
+            <p class="muted">
+              参加希望・練習会の問い合わせ・取材などは上記アドレスへ。
+              返信目安：<b>24〜72時間</b>。
+            </p>
+
+            <div class="contactBtns">
+              mailto:n.dartsclub@gmial.com?subject=Orions%20Darts%20Club%20Inquiry
+                <span>Open Mail</span>
+                <span class="mono">↗</span>
+              </a>
+              <button class="btn secondary" id="copyPageBtn" type="button">
+                Share page link
+              </button>
+            </div>
+          </div>
+
+          <div class="contactRight">
+            <div class="contactMeta">
+              <div class="metaBlock">
+                <div class="metaLabel">Now</div>
+                <div class="metaValue" id="recruitText">部員募集中</div>
+              </div>
+              <div class="metaBlock">
+                <div class="metaLabel">Focus</div>
+                <div class="metaValue">Practice • Precision • Orbit</div>
+              </div>
+              <div class="metaBlock">
+                <div class="metaLabel">Update</div>
+                <div class="metaValue mono" id="lastUpdated">—</div>
+              </div>
+            </div>
+
+            <div class="miniCard">
+              <div class="miniTitle">How to join</div>
+              <ol class="miniList">
+                <li>メールに「参加希望」と記載</li>
+                <li>希望曜日・時間帯を送付</li>
+                <li>返信で日程調整 → 体験参加</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERS -->
+    <section id="members" class="section">
+      <div class="sectionHead">
+        <h2 class="h2">Members</h2>
+        <div class="chips">
+          <span class="pill small">Initials</span>
+          <span class="pill small">Leadership</span>
+        </div>
+      </div>
+
+      <div class="membersGrid" id="membersGrid">
+        <!-- app.js が生成 -->
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section">
+      <div class="sectionHead">
+        <h2 class="h2">Schedule</h2>
+        <div class="chips">
+          <span class="pill small" id="scheduleBadge">Loading…</span>
+          <span class="pill small">JSON-driven</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="inner">
+          <div class="list" id="scheduleList">
+            <!-- app.js が生成 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerInner">
+        <div>© <span id="year"></span> Orions Darts Club</div>
+        <div class="muted">Hosted as static files. No ads. No trackers.</div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="toastTitle" id="toastTitle">Done</div>
+    <div class="toastBody muted" id="toastBody">—</div>
+  </div>
+
+  ./assets/app.js</script>
+</body>
+</html>
